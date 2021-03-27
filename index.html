@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Ironhack Cart</title>
+</head>
+
+<body>
+  <h1>Ironhack Cart</h1>
+  <table id="cart">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <item-list name="Ironhack Rubber Duck" price="25"></item-list>
+      <item-list name="Ironhack Beach Towel" price="12.5"></item-list>
+    </tbody>
+    <tfoot>
+      <tr class="create-product">
+        <td>
+          <input type="text" placeholder="Product Name" />
+        </td>
+        <td>
+          <input type="number" placeholder="Price" />
+        </td>
+        <td></td>
+        <td></td>
+        <td>
+          <button id="create" class="btn">Create Product</button>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+  <p class="calculate-total">
+    <button id="calculate" class="btn btn-success">Calculate Prices</button>
+  </p>
+  <h2 id="total-value">Total: $<span>0</span></h2>
+</body>
+
+<script type="text/javascript" src="./js/index.js"></script>
+<script src="./js/itemComponent.js"></script>
+
+</html>
